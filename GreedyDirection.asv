@@ -1,0 +1,5 @@
+function dist = GreedyDirection(posCur, posDst)
+
+allDir = [{[1,0]} {[0,1]} {[-1,0]} {[0,-1]}];
+
+

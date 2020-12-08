@@ -1,0 +1,19 @@
+figure;
+axis([-5 5 -1.5 1.5])
+
+t = linspace(0, 2*pi, 100);
+x = 3*cos(t);
+y = 3*sin(t);
+
+for k=1:length(t)
+    clf;
+    t_k = t(k);
+    x_k = x(k);
+    y_k = y(k);
+    plot(x_k, y_k, 'go', 'LineWidth', 3, 'MarkerSize', 15);
+    hold on;
+    grid on;
+    
+    view([10 10]);
+    pause(0.2);
+end
